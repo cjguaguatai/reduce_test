@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let arr = [{a:100}, {a: 20}, {a:-10}]
+    // let sum = arr.reduce((pre,current) => {
+    //     pre += current.a
+    //     return pre
+    // },0)
+    // console.log(sum);
+
+
+
+
+    let str = 'asdasdasdasdasdasdasd'
+    let newStr = str.split('')
+    let newObj = newStr.reduce((pre,current) => {
+        // console.log(pre);
+        // console.log(current);
+        if(pre[current]) pre[current]++
+        else pre[current] = 1
+        return pre
+    },{})
+    console.log(newObj);
+</script>
+</html>
